@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='MarvelComics' inline='true' name='federated.1j50xyt015rd7u10bdh380hqzjbj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MarvelComics' name='textscan.18aqrx40tlvkhk1gu80px1ooowuc'>
+            <connection class='textscan' directory='C:/Users/USER/Documents/Data/Proyectos/Marvel Comic Books/Datasets' filename='MarvelComics.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18aqrx40tlvkhk1gu80px1ooowuc' name='MarvelComics.csv' table='[MarvelComics#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='comic_name' ordinal='0' />
+            <column datatype='string' name='active_years' ordinal='1' />
+            <column datatype='string' name='issue_title' ordinal='2' />
+            <column datatype='string' name='publish_date' ordinal='3' />
+            <column datatype='string' name='issue_description' ordinal='4' />
+            <column datatype='string' name='penciler' ordinal='5' />
+            <column datatype='string' name='writer' ordinal='6' />
+            <column datatype='string' name='cover_artist' ordinal='7' />
+            <column datatype='string' name='Imprint' ordinal='8' />
+            <column datatype='string' name='Format' ordinal='9' />
+            <column datatype='string' name='Rating' ordinal='10' />
+            <column datatype='string' name='Price' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comic_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comic_name]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>comic_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_years</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[active_years]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>active_years</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>issue_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[issue_title]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>issue_title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publish_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publish_date]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>publish_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>issue_description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[issue_description]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>issue_description</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penciler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[penciler]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>penciler</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>writer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[writer]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>writer</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cover_artist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cover_artist]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>cover_artist</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Imprint</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Imprint]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>Imprint</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Format</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Format]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>Format</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[MarvelComics.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='MarvelComics.csv' datatype='table' name='[__tableau_internal_object_id__].[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]' role='measure' type='quantitative' />
+      <column caption='Active Years' datatype='string' name='[active_years]' role='dimension' type='nominal' />
+      <column caption='Comic Name' datatype='string' name='[comic_name]' role='dimension' type='nominal' />
+      <column caption='Cover Artist' datatype='string' name='[cover_artist]' role='dimension' type='nominal' />
+      <column caption='Issue Description' datatype='string' name='[issue_description]' role='dimension' type='nominal' />
+      <column caption='Issue Title' datatype='string' name='[issue_title]' role='dimension' type='nominal' />
+      <column caption='Penciler' datatype='string' name='[penciler]' role='dimension' type='nominal' />
+      <column caption='Publish Date' datatype='string' name='[publish_date]' role='dimension' type='nominal' />
+      <column caption='Writer' datatype='string' name='[writer]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/USER/AppData/Local/Temp/TableauTemp/#TableauTemp_1rforev056vbw3157ib6l1iviyjj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2024 03:04:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>comic_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[comic_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comic_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3133</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>active_years</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[active_years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>active_years</remote-alias>
+              <ordinal>1</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>493</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>issue_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[issue_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>issue_title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32987</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publish_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[publish_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publish_date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4016</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>issue_description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[issue_description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>issue_description</remote-alias>
+              <ordinal>4</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28797</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>penciler</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[penciler]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>penciler</remote-alias>
+              <ordinal>5</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2127</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>writer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[writer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>writer</remote-alias>
+              <ordinal>6</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1534</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cover_artist</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cover_artist]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cover_artist</remote-alias>
+              <ordinal>7</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1083</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Imprint</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Imprint]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Imprint</remote-alias>
+              <ordinal>8</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Format</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Format]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Format</remote-alias>
+              <ordinal>9</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>10</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>11</ordinal>
+              <family>MarvelComics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[MarvelComics.csv_423140D934AB472C93F40B4C031FCADD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Perú&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='MarvelComics.csv' id='MarvelComics.csv_423140D934AB472C93F40B4C031FCADD'>
+            <properties context=''>
+              <relation connection='textscan.18aqrx40tlvkhk1gu80px1ooowuc' name='MarvelComics.csv' table='[MarvelComics#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='string' name='comic_name' ordinal='0' />
+                  <column datatype='string' name='active_years' ordinal='1' />
+                  <column datatype='string' name='issue_title' ordinal='2' />
+                  <column datatype='string' name='publish_date' ordinal='3' />
+                  <column datatype='string' name='issue_description' ordinal='4' />
+                  <column datatype='string' name='penciler' ordinal='5' />
+                  <column datatype='string' name='writer' ordinal='6' />
+                  <column datatype='string' name='cover_artist' ordinal='7' />
+                  <column datatype='string' name='Imprint' ordinal='8' />
+                  <column datatype='string' name='Format' ordinal='9' />
+                  <column datatype='string' name='Rating' ordinal='10' />
+                  <column datatype='string' name='Price' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{56A9C28A-8034-4A32-B41A-14737A7FE04C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{094632D4-8744-49F1-89C4-7B61A456BC43}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
